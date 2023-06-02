@@ -104,5 +104,5 @@ boot.fn <- function(data, index) {
 # 3.(c)
 library(boot)
 set.seed(1)
-boot_results=boot(Default, boot.fn, R = 1000)
+boot_results=boot(Default, boot.fn, R = 100)
 boot_results
