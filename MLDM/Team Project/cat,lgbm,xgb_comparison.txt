@@ -1,0 +1,22 @@
+categorical variables
+XGB : 전처리 해주어야함
+lgbm, cat : 전처리 알아서 해줌
+단, 어떤 feature가 categorical 한지는 명시해줘야함
+cat : cat_features, one_hot_max_size
+lgbm : categorical_feature
+
+speed control parameters (subsample)
+xgb : colsample_bytree, n_estimators
+cat : rsm
+lgbm : feature_fraction, bagging_fraction, num_iterations
+
+xgb :  데이터 크기 크면 불리 (lgbm보다 느려짐, 메모리 많이 차지)
+lgbm, cat : 데이터 크기 커도 괜찮음
+
+lgbm : feature가 많으면 유리
+xgb : 이상치 많은 데이터에 유리
+cat : 범주형 변수들에 유리
+
+lgbm, xgb 비교 : 메모리 사용량에서 차이남
+lgbm, cat 비교 : 범주형에서 cat이 유리, feature 많으면 lgbm이 유리
+xgb, cat 비교 : 메모리는 cat이 더 효율적, 속도는 xgb가 더 빠름
