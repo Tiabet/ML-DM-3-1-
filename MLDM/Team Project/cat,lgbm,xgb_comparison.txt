@@ -1,10 +1,3 @@
-categorical variables
-XGB : 전처리 해주어야함
-lgbm, cat : 전처리 알아서 해줌
-단, 어떤 feature가 categorical 한지는 명시해줘야함
-cat : cat_features, one_hot_max_size
-lgbm : categorical_feature
-
 speed control parameters (subsample)
 xgb : colsample_bytree, n_estimators
 cat : rsm
